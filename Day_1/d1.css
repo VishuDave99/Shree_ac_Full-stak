@@ -1,0 +1,56 @@
+.p1d1 {
+  height: 30vh;
+  width: 300px;
+  background: red;
+}
+.p1d2 {
+  height: 30vh;
+  width: 300px;
+  background: red;
+  margin-left: 300px;
+}
+.p1d3 {
+  height: 30vh;
+  width: 300px;
+  background: red;
+  margin-left: 600px;
+}
+.p1d4 {
+  height: 30vh;
+  width: 300px;
+  background: red;
+  margin-left: 600px;
+  float: left;
+}
+.p1d5 {
+  height: 30vh;
+  width: 300px;
+  background: red;
+  margin-top: 30vh;
+
+  float: left;
+}
+.p2mmd{
+  height: 100vh;
+  width: 1200px;
+  padding: 10%;
+  background-color: greenyellow;
+}
+.p2md1{
+  float: left;
+  width: 30%;
+  height: 90%;
+  background: yellow;
+  margin-left:auto ;
+  margin-right :auto;
+
+}
+.p2md2{
+  float: left;
+  width: 30%;
+  height: 90%;
+  background: yellow;
+  margin-left:10% ;
+  margin-right :auto;
+
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* MOst importent Thing..!
+       */
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      .nav_top {
+        background-color: rgba(155, 82, 245, 0.51);
+        border-radius: 10px;
+        padding: 10px;
+      }
+      .nav_top > ul {
+        margin-left: 18%;
+      }
+      .nav_top > ul > li {
+        display: inline-block;
+      }
+      .nav_top > ul > li > a {
+        text-decoration: none;
+        color: cornflowerblue;
+        background-color: pink;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 10px;
+      }
+      .sub_nav{
+        position: absolute;
+        background-color: pink;
+        border-radius: 10px;
+        display: none;
+        z-index: 1;
+      }
+      .nav_top li:hover .sub_nav {
+        display: block;
+        padding: 10px;
+        margin-top: 10px;
+      }
+      .nav_side li a{
+        text-decoration: none;
+        color: cornflowerblue;
+
+      }
+      .nav_side .sub_m2{
+        display: none;
+      }
+      .nav_side li:hover .sub_m2{
+        display: block;
+        background-color: pink;
+        border-radius: 10px;
+        padding: 10px;
+        margin-left: 20px;
+        width: fit-content;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav_top">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a>
+            <div class="sub_nav">
+                <ul>
+                    <li><a href="#">Submenu 1</a></li>
+                    <li><a href="#">Submenu 2</a></li>
+                    <li><a href="#">Submenu 3</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Services</a>
+            <div class="sub_nav">
+                <ul>
+                    <li><a href="#">Submenu 1</a></li>
+                    <li><a href="#">Submenu 2</a></li>
+                    <li><a href="#">Submenu 3</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="nav_side">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a>
+          <ul class="sub_m2">
+            <li><a href="#">Submenu 1</a></li>
+            <li><a href="#">Submenu 2</a></li>
+            <li><a href="#">Submenu 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

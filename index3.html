@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heading-title {
+            width: 100%;
+            height: 81px;
+            box-shadow: 10px 9px 40px black inset;
+            position: relative;
+        }
+
+        .heading {
+            position: absolute;
+            text-align: center;
+            top: 20%;
+            left: 45%;
+            font-size: 45px;
+        }
+
+        .navbar {
+            height: 47px;
+            width: 100%;
+            padding-top: 0.4%;
+            background-color: #525050;
+        }
+
+        .nav-list {
+            display: inline-block;
+            list-style-type: none;
+            background-image: url(../img/button_bg1.png);
+            width: 19.8%;
+            color: white;
+            text-align: center;
+            padding-bottom: 11px;
+            padding-top: 11px;
+
+        }
+
+        .nav-list-big {
+            display: inline-block;
+            list-style-type: none;
+            background-image: url(../img/button_bg1.png);
+            width: 19.5%;
+            color: white;
+            text-align: center;
+            padding-bottom: 11px;
+            padding-top: 11px;
+        }
+
+        /* .nav-list {
+            list-style-type: none;
+            display: inline;
+            padding-right: 7.6%;
+            padding-left: 7.6%;
+            padding-bottom: 12px;
+            padding-top: 7px;
+            height: 11%;
+            color: white;
+            background-image: url(../img/button_bg1.png);
+            background-position: center no-repeat;
+            border-radius: 2px;
+        } */
+        .nav-list:hover {
+            background-image: url("../img/buttonhot_bg1.png");
+
+        }
+
+        .nav-list-big:hover {
+            background-image: url("../img/buttonhot_bg1.png");
+            padding-bottom: 11px;
+            padding-top: 14px;
+        }
+
+        .info-container {
+            float: left;
+            width: 14%;
+            height: 350px;
+            box-shadow: 10px 9px 70px black inset;
+            border-radius: 10px;
+            padding: 3%;
+        }
+
+        .info-container p {
+            text-align: center;
+            font-size: 28px;
+        }
+
+        .slider {
+            border-bottom: 8px double gray;
+        }
+
+        .form {
+            box-shadow: 10px 9px 70px black inset;
+            border-radius: 10px;
+            margin-left: 20%;
+            height: 430px;
+            position: relative;
+        }
+
+        table {
+            position: absolute;
+            padding-left: 21%;
+            margin-top: 2%;
+        }
+
+        th {
+            font-size: 45px;
+        }
+
+        label {
+            display: inline-block;
+            width: 111px;
+            font-size: 22px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 222px;
+            height: 31px;
+            margin-top: 15px;
+
+        }
+
+        input[type="checkbox"] {
+            margin-top: 15px;
+            margin-left: 5%;
+            width: 17px;
+            height: 17px;
+        }
+
+        .test1 {
+            margin-left: 111px;
+        }
+
+        input[type="radio"] {
+            margin-top: 15px;
+            margin-left: 61px;
+        }
+
+        .second-column {
+            padding-bottom: 14%;
+            padding-left: 51px;
+        }
+
+        textarea {
+            margin-top: 18px;
+            width: 222px;
+            margin-left: 0;
+        }
+
+        select {
+            width: 233px;
+            margin-left: 73px;
+        }
+
+        button {
+            margin-top: 365px;
+            margin-left: 2%;
+            width: 5.7%;
+            height: 37px;
+            background-color: #f2eac5;
+            box-shadow: 2px 2px  11px gray inset; 
+            border: none;
+        }
+
+        .submit-btn {
+            margin-left: 41%;
+        }
+ 
+        /* input[type="text"],
+        input[type="email"] {
+            margin-right: 41px;
+        } */
+
+        .footer {
+            background-image: url("../img/footer.bmp");
+            height: 22px;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .heading{
+                left: 41%;
+            }
+            .nav-list {
+                width: 16.8%;
+            }
+
+            .nav-list-big {
+                width: 28%;
+            }
+
+            .info-container {
+                width: 100%;
+                padding: 0%;
+                float: none;
+            }
+
+            .form {
+                margin-left: 0%;
+                width: 100%;
+                height: 511px;
+            }
+
+            table {
+                padding-left: 0%;
+                margin-top: 2%;
+
+            }
+
+            label {
+                font-size: 15px;
+                margin-top: 11%;
+                margin-bottom: 0px;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="password"] {
+                width: 171px;
+                height: 31px;
+                margin-top: 9px;
+
+            }
+
+            input[type="radio"] {
+                margin-top: 34px;
+                margin-left: 1px
+            }
+
+            input[type="checkbox"] {
+                margin-top: 1px;
+                margin-left: 1px;
+            }
+
+            .second-column {
+                padding-bottom: 88px;
+                padding-left: 2px;
+            }
+
+            textarea {
+                margin-top: 18px;
+                width: 171px;
+                margin-left: 0;
+            }
+
+            select {
+                width: 132px;
+                margin-left: 5px;
+                margin-top: 19px;
+            }
+
+            button {
+                margin-right: 77px;
+                height: 35px;
+                width: 25px;
+                background-color: #f2eac5;
+            }
+
+            button {
+                margin-top: 455px;
+                margin-left: 22px;
+                margin-right: 55px;
+                width: 21%;
+                height: 37px;
+                background-color: #f2eac5;
+            }
+
+            .submit-btn {
+                margin-left: 21%;
+            }
+        }
+    </style>
+</head>
+
+<body style="padding: 0; margin: 0;">
+    <div class="heading-title">
+        <p class="heading"> Home</p>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li class="nav-list">Home</li>
+            <li class="nav-list">Aout</li>
+            <li class="nav-list">Services</li>
+            <li class="nav-list">Portfolio</li>
+            <li class="nav-list-big">Home Portfolio</li>
+        </ul>
+    </nav>
+
+    <!-- Slider -->
+    <div class="slider">
+
+        <!-- #region Jssor Slider Begin -->
+
+        <!-- Generator: Jssor Slider Maker -->
+        <!-- Source: http://www.jssor.com/demos/full-width-slider.slider -->
+
+        <!-- This demo works with jquery library -->
+
+        <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="../js/jssor.slider.mini.js"></script>
+        <!-- use jssor.slider.debug.js instead for debug -->
+        <script>
+            jQuery(document).ready(function ($) {
+
+                var jssor_1_SlideoTransitions = [
+                    [{ b: 5500, d: 3000, o: -1, r: 240, e: { r: 2 } }],
+                    [{ b: -1, d: 1, o: -1, c: { x: 51.0, t: -51.0 } }, { b: 0, d: 1000, o: 1, c: { x: -51.0, t: 51.0 }, e: { o: 7, c: { x: 7, t: 7 } } }],
+                    [{ b: -1, d: 1, o: -1, sX: 9, sY: 9 }, { b: 1000, d: 1000, o: 1, sX: -9, sY: -9, e: { sX: 2, sY: 2 } }],
+                    [{ b: -1, d: 1, o: -1, r: -180, sX: 9, sY: 9 }, { b: 2000, d: 1000, o: 1, r: 180, sX: -9, sY: -9, e: { r: 2, sX: 2, sY: 2 } }],
+                    [{ b: -1, d: 1, o: -1 }, { b: 3000, d: 2000, y: 180, o: 1, e: { y: 16 } }],
+                    [{ b: -1, d: 1, o: -1, r: -150 }, { b: 7500, d: 1600, o: 1, r: 150, e: { r: 3 } }],
+                    [{ b: 10000, d: 2000, x: -379, e: { x: 7 } }],
+                    [{ b: 10000, d: 2000, x: -379, e: { x: 7 } }],
+                    [{ b: -1, d: 1, o: -1, r: 288, sX: 9, sY: 9 }, { b: 9100, d: 900, x: -1400, y: -660, o: 1, r: -288, sX: -9, sY: -9, e: { r: 6 } }, { b: 10000, d: 1600, x: -200, o: -1, e: { x: 16 } }]
+                ];
+
+                var jssor_1_options = {
+                    $AutoPlay: true,
+                    $SlideDuration: 800,
+                    $SlideEasing: $Jease$.$OutQuint,
+                    $CaptionSliderOptions: {
+                        $Class: $JssorCaptionSlideo$,
+                        $Transitions: jssor_1_SlideoTransitions
+                    },
+                    $ArrowNavigatorOptions: {
+                        $Class: $JssorArrowNavigator$
+                    },
+                    $BulletNavigatorOptions: {
+                        $Class: $JssorBulletNavigator$
+                    }
+                };
+
+                var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+                //responsive code begin
+                //you can remove responsive code if you don't want the slider scales while window resizing
+                function ScaleSlider() {
+                    var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                    if (refSize) {
+                        refSize = Math.min(refSize, 1920);
+                        jssor_1_slider.$ScaleWidth(refSize);
+                    }
+                    else {
+                        window.setTimeout(ScaleSlider, 30);
+                    }
+                }
+                ScaleSlider();
+                $(window).bind("load", ScaleSlider);
+                $(window).bind("resize", ScaleSlider);
+                $(window).bind("orientationchange", ScaleSlider);
+                //responsive code end
+            });
+        </script>
+
+        <style>
+            /* jssor slider bullet navigator skin 05 css */
+            /*
+            .jssorb05 div           (normal)
+            .jssorb05 div:hover     (normal mouseover)
+            .jssorb05 .av           (active)
+            .jssorb05 .av:hover     (active mouseover)
+            .jssorb05 .dn           (mousedown)
+            */
+            .jssorb05 {
+                position: absolute;
+            }
+
+            .jssorb05 div,
+            .jssorb05 div:hover,
+            .jssorb05 .av {
+                position: absolute;
+                /* size of bullet elment */
+                width: 16px;
+                height: 16px;
+                background: url('../img/b05.png') no-repeat;
+                overflow: hidden;
+                cursor: pointer;
+            }
+
+            .jssorb05 div {
+                background-position: -7px -7px;
+            }
+
+            .jssorb05 div:hover,
+            .jssorb05 .av:hover {
+                background-position: -37px -7px;
+            }
+
+            .jssorb05 .av {
+                background-position: -67px -7px;
+            }
+
+            .jssorb05 .dn,
+            .jssorb05 .dn:hover {
+                background-position: -97px -7px;
+            }
+
+            /* jssor slider arrow navigator skin 22 css */
+            /*
+            .jssora22l                  (normal)
+            .jssora22r                  (normal)
+            .jssora22l:hover            (normal mouseover)
+            .jssora22r:hover            (normal mouseover)
+            .jssora22l.jssora22ldn      (mousedown)
+            .jssora22r.jssora22rdn      (mousedown)
+            */
+            .jssora22l,
+            .jssora22r {
+                display: block;
+                position: absolute;
+                /* size of arrow element */
+                width: 40px;
+                height: 58px;
+                cursor: pointer;
+                background: url('../img/a22.png') center center no-repeat;
+                overflow: hidden;
+            }
+
+            .jssora22l {
+                background-position: -10px -31px;
+            }
+
+            .jssora22r {
+                background-position: -70px -31px;
+            }
+
+            .jssora22l:hover {
+                background-position: -130px -31px;
+            }
+
+            .jssora22r:hover {
+                background-position: -190px -31px;
+            }
+
+            .jssora22l.jssora22ldn {
+                background-position: -250px -31px;
+            }
+
+            .jssora22r.jssora22rdn {
+                background-position: -310px -31px;
+            }
+        </style>
+
+
+        <div id="jssor_1"
+            style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 400px; overflow: hidden; visibility: hidden;">
+            <!-- Loading Screen -->
+            <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+                <div
+                    style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;">
+                </div>
+                <div
+                    style="position:absolute;display:block;background:url('../img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;">
+                </div>
+            </div>
+            <div data-u="slides"
+                style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+                <div data-p="225.00" style="display: none;">
+                    <img data-u="image" src="../img/1.jpg" />
+
+
+                </div>
+                <div data-p="225.00" style="display: none;">
+                    <img data-u="image" src="../img/2.jpg" />
+                </div>
+                <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                    <img data-u="image" src="../img/3.jpg" />
+                </div>
+                <a data-u="add" href="http://www.jssor.com" style="display:none">Jssor Slider</a>
+
+            </div>
+            <!-- Bullet Navigator -->
+            <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+                <!-- bullet navigator item prototype -->
+                <div data-u="prototype" style="width:16px;height:16px;"></div>
+            </div>
+            <!-- Arrow Navigator -->
+            <span data-u="arrowleft" class="jssora22l" style="top:0px;left:12px;width:40px;height:58px;"
+                data-autocenter="2"></span>
+            <span data-u="arrowright" class="jssora22r" style="top:0px;right:12px;width:40px;height:58px;"
+                data-autocenter="2"></span>
+        </div>
+
+        <!-- #endregion Jssor Slider End -->
+    </div>
+    <!-- End Slider -->
+
+
+    <!-- Info Cntainer -->
+    <div class="info-container">
+        <p>"Don't Stand <br>
+            in the way of <br>your own <br>
+            progress by <br> just being <br> afraid of <br> taking<br> chance" <br>Hiren <br> Ghelani</p>
+    </div>
+    <!-- Info Container End -->
+    <div class="form">
+        <form>
+            <table class="form-table">
+                <tr>
+                    <th colspan="2"> Regestration</th>
+                </tr>
+                <tr>
+                    <td>
+                        <label>First Name:</label>
+                        <input type="text" name="txt_first" placeholder="First Name"><br>
+
+
+                        <label>Email:</label>
+                        <input type="text" name="txt_email" placeholder="emai"><br>
+
+                        <label>Address</label>
+                        <textarea cols="31" rows="4" name="txt_address" style="vertical-align: top;"></textarea><br>
+                        <span style="font-size: 22px;">Hobby</span>
+                        <input type="checkbox" name="cbk_play" style="margin-left: 53px;">Play
+                        <input type="checkbox" name="cbk_reading">Read<br>
+                        <input type="checkbox" name="cbk_watchtv" style="margin-left: 117px;">Sing
+                        <input type="checkbox" name="cbk_swimming" class="test1">Dance<br><br>
+
+
+
+                    </td>
+
+                    <td class="second-column">
+                        <label>Last Name:</label>
+                        <input type="text" name="txt_first" placeholder="First Name"><br>
+
+
+                        <label>Password:</label>
+                        <input type="password" name="password" placeholder=""><br>
+                        <span style="font-size: 22px;">Gender</span><input type="radio" name="rb_gender"
+                            class="radio">Male
+                        <input type="radio" name="rbt_gender" class="radio">Female<br><br>
+                        <span style="font-size: 22px;">City:</span>
+                        <select name="ddl_city">
+                            <option>---Select-----</option>
+                            <option>Rajkot</option>
+                            <option>Dhoraji</option>
+                        </select>
+                        <br>
+
+                    </td>
+
+
+                </tr>
+            </table>
+            <td class="btn" colspan="2">
+                <button type="submit" class="submit-btn">Submit</button>
+                <button type="submit" class="reset-btn">reset</button>
+            </td>
+        </form>
+    </div>
+
+    <div class="footer"></div>
+</body>
+
+</html>

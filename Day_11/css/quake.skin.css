@@ -10,9 +10,9 @@
 }
 .quake-nav
 {
-    width: 970px;
+    width: 99%;
 }
-.quake-nav a
+.quake-nav a    
 {
     width: 67px;
     height: 67px;
@@ -25,7 +25,7 @@
 .quake-next
 {
     background-image: url('../media/images/arrow-right.png');
-    margin-right: -27px;
+    margin-right: 0px;
 }
 .quake-prev:hover
 {

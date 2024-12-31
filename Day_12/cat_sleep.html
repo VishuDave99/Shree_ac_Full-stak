@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        .main{
+            height: 100vh;
+            width: 100%;
+            background-color: cyan;
+            position: relative;
+        }
+        .pat_stand{
+            width: 50px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .pat_ped{
+            width: 250px;
+            height: 40px;
+            background-color: blue;
+            position: absolute;
+            border-radius: 50px;
+            top: 50%;
+            z-index: 399;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .cat_head{
+            width: 70px;
+            height: 70px;
+            border-radius: 50px 50px 0px 0px ;
+            background-color: gray;
+            position: absolute;
+            top: 48%;
+            left: 47%;
+            transform: translate(-50%, -50%);
+        }
+        .cat_nose{
+            width: 8px;
+            height: 8px;
+            background-color: black;
+            position: absolute;
+            top: 47%;
+            left: 47%;
+            border-radius: 10px;
+            transform: translate(-50%, -50%);
+        }
+        .cat_body{
+            width: 120px;
+            height: 80px;
+            background-color: gray;
+            position: absolute;
+            border-radius: 150px 150px 0px 0px ;
+            top: 46%;
+            left: 52.5%;
+            transform: translate(-50%, -50%);
+            z-index: 398;
+        }
+        .cat_tail{
+            width: 20px;
+            height: 120px;
+            background-color: gray;
+            position: absolute;
+            top: 53.5%;
+            border-radius: 10px;
+            z-index: 400;
+            left: 55.5%;
+            transform: translate(-50%, -50%);
+        }
+        .cat_Ear1{
+            width: 15px;
+            height: 15px;
+            background-color: gray;
+            position: absolute;
+            top: 44.5%;
+            transform: skew(20deg) rotate(110deg);
+            left: 45.3%;
+            border-radius: 10px 10px 10px 0px;
+            z-index: 401;
+        }
+        .cat_Ear2{
+            width: 15px;
+            height: 15px;
+            background-color: gray;
+            position: absolute;
+            top: 43.7%;
+            transform: skew(-20deg) rotate(50deg);
+            left: 47%;
+            border-radius: 0px 10px 10px 10px;
+            z-index: 401;
+        }
+        .cat_mustash_left{
+            width: 15px;
+            height: 15px;
+            border-left: 2px solid  black;
+            border-top: 2px solid black;
+            position: absolute;
+            top: 40%;
+            transform: skew(40deg) rotate(180deg);
+            left: 47%;
+            border-radius: 0px 10px 10px 10px;
+            z-index: 401;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="pat_stand"></div>
+        <div class="pat_ped"></div>
+        <div class="cat_head"></div>
+        <div class="cat_mustash_right"></div>
+        <div class="cat_mustash_left"></div>
+        <div class="cat_Ear1"></div>
+        <div class="cat_Ear2"></div>
+        <div class="cat_nose"></div>
+        <div class="cat_body"></div>
+        <div class="cat_tail"></div>
+        
+    </div>
+</body>
+</html>

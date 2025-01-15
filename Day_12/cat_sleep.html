@@ -10,6 +10,7 @@
             width: 100%;
             background-color: cyan;
             position: relative;
+            z-index: -2;
         }
         .pat_stand{
             width: 50px;
@@ -39,6 +40,7 @@
             position: absolute;
             top: 48%;
             left: 47%;
+            z-index: -1;
             transform: translate(-50%, -50%);
         }
         .cat_nose{
@@ -95,17 +97,77 @@
             border-radius: 0px 10px 10px 10px;
             z-index: 401;
         }
-        .cat_mustash_left{
-            width: 15px;
-            height: 15px;
-            border-left: 2px solid  black;
-            border-top: 2px solid black;
+        .cat_mustash_right .wisker1{
+            width: 14px;
+            height: 2%;
+            background-color: rgb(255, 255, 255);   
             position: absolute;
-            top: 40%;
-            transform: skew(40deg) rotate(180deg);
-            left: 47%;
-            border-radius: 0px 10px 10px 10px;
-            z-index: 401;
+            top: 35%;
+            left: 19%;
+            z-index: 402;
+            transform: rotate(15deg);
+            transform-origin: right;
+
+        }
+        .cat_mustash_right .wisker2{
+            width: 14px;
+            height: 2%;
+            background-color: rgb(255, 255, 255);   
+            position: absolute;
+            top: 35%;
+            left: 19%;
+            z-index: 402;
+            transform: rotate(-15deg);
+            animation: wiskerAni 5s ease-in-out 2s infinite;
+            transform-origin: right;
+        }
+        
+        .cat_mustash_left .wisker1{
+            width: 14px;
+            height: 2%;
+            background-color: rgb(255, 255, 255);   
+            position: absolute;
+            top: 35%;
+            left: 60%;
+            z-index: 402;
+            transform: rotate(15deg);
+            transform-origin: left;
+
+        }
+        .cat_mustash_left .wisker2{
+            width: 14px;
+            height: 2%;
+            background-color: rgb(255, 255, 255);   
+            position: absolute;
+            top: 35%;
+            left: 60%;
+            z-index: 402;
+            transform: rotate(-15deg);
+            animation: wiskerAni 5s ease-in-out 2s infinite;
+            transform-origin: left;
+        }
+        @keyframes wiskerAni {
+            0%{
+                transform: rotate(15deg);
+            }
+            20%{
+                transform: rotate(-15deg);
+                .cat_mustash_left{
+                    top: ;
+                }
+            }
+            40%{
+                transform: rotate(15deg);
+            }
+            60%{
+                transform: rotate(-15deg);
+            }
+            80%{
+                transform: rotate(15deg);
+            }
+            100%{
+                transform: rotate(15deg);
+            }
         }
     </style>
 </head>
@@ -113,9 +175,16 @@
     <div class="main">
         <div class="pat_stand"></div>
         <div class="pat_ped"></div>
-        <div class="cat_head"></div>
-        <div class="cat_mustash_right"></div>
-        <div class="cat_mustash_left"></div>
+        <div class="cat_head">
+        <div class="cat_mustash_right">
+            <div class="wisker1"></div>
+            <div class="wisker2"></div>
+        </div>
+        <div class="cat_mustash_left">
+            <div class="wisker1"></div>
+            <div class="wisker2"></div>
+        </div>
+    </div>
         <div class="cat_Ear1"></div>
         <div class="cat_Ear2"></div>
         <div class="cat_nose"></div>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write(" How long you of fibonaki ya wont ");
+        nLent = parseInt(prompt("How long you of fibonaki ya wont "));
+        mx=0;nx=1;bx=0;
+        for(i=1 ; i<=nLent; i++){
+            bx = mx + nx ;
+            document.write("<br/>"+bx+"<br/>");
+            mx=nx; nx=bx;
+        }
+    </script>
+    
+</body>
+</html>

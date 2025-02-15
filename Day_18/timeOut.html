@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffff;
+        }
+        .dv1 {
+            width: 250px;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 150px;
+            border: solid 20px blue;
+            border-top: solid 20px red;
+            animation-name: anim_01;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes anim_01 {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+                
+            }
+    </style>
+</head>
+<body id="radhe" onload="fx01()">
+    <div class="dv1"></div>
+    <script>
+        function fx01(){
+            setTimeout( fx02, 4000);
+        }
+        function fx02(){
+            window.location.href="../Day_1/d1p1.html";
+        }
+    </script>
+    
+</body>
+</html>

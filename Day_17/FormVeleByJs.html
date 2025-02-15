@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function valedate() {
+        var n1 = document.form01.fname.value;
+        var n2 = document.form01.lname.value;
+        var emailx = document.form01.email.value;
+        var pswdx = document.form01.pwd.value;
+
+        if (n1 == "" && n2 == "" && emailx == "" && pswdx == "") {
+          alert("All fields must be filled out");
+          return false;
+        }
+        var ch01 = document.form01.gender[0].checked;
+        var ch02 = document.form01.gender[1].checked;
+
+        if (!ch01 && !ch02) {
+          alert("Please select a gender.");
+          return false;
+        }
+
+        var city = document.form01.city.selectionIndex;
+        if (city == 0) {
+          alert("Please select a city");
+          return false;
+        }
+      }
+    </script>
+    <form action="" name="form01" method="post">
+      <label for="fname">First Name:</label><br />
+      <input type="text" id="fname" name="fname" /><br />
+      <label for="lname">Last Name:</label><br />
+      <input type="text" id="lname" name="lname" /><br />
+      <label for="email">Email:</label><br />
+      <input type="text" id="email" name="email" /><br />
+      <label for="pwd">Password:</label><br />
+      <input type="password" id="pwd" name="pwd" /><br />
+
+      <label for="">Gender</label>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label><br />
+
+      <label for="city">Select your city:</label>
+      <select id="city" name="city">
+        <option value="">Select City</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Kolkata">Kolkata</option>
+        <option value="Chennai">Chennai</option>
+      </select>
+
+      
+      <input type="submit" value="Submit" onclick="valedate()" />
+    </form>
+  </body>
+</html>

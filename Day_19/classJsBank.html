@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Bank {
+            constructor(name, balance){
+                this.name = name;
+                this.balance = balance;
+            }
+            checkBalance(){
+                document.write(this.balance);  // Use `this.balance` instead of just `balance`
+            }
+            deposit(){
+                this.balance = this.balance + parseInt(prompt("How much to deposit?"));
+            }
+            withdraw(){
+                this.balance = this.balance - parseInt(prompt("How much to withdraw?"));
+            }
+            checkInfo(){
+                document.write("Name: " + this.name + "<br/> Balance: " + this.balance);
+            }
+            whatYoudo(){
+                document.write("Hello, my name is " + this.name + " and my balance is " + this.balance);
+                document.write("<br/>What do you want to do?");
+                var action = prompt("Enter 1 for checking balance, 2 for deposit, 3 for withdraw");
+                switch (action) {
+                    case '1':
+                        this.checkBalance();
+                        break;
+                    case '2':
+                        this.deposit();
+                        break;
+                    case '3':
+                        this.withdraw();
+                        break;
+                    default:
+                        document.write("Invalid option");
+                        break;
+                }
+            }
+            setup(){
+                var name = prompt("Enter your name: ");
+                var balance = parseInt(prompt("Enter your initial balance: "));
+                this.name = name;
+                this.balance = balance;
+            }
+        }
+
+        var mihir = new Bank();  // Changed from `Bnak()` to `Bank()`
+        mihir.setup();
+        mihir.whatYoudo();
+    </script>
+</body>
+</html>

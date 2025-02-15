@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Persion {
+            constructor(Name, age ,Contry , mobile){
+                this.Name = Name;
+                this.age = age;
+                this.Contry = Contry;
+                this.mobile = mobile;
+            }
+            displayDetails() {
+                document.write(`Name: ${this.Name}, Age: ${this.age}, Country: ${this.Contry}, Mobile: ${this.mobile}`);
+            }
+            getData() {
+                this.Name = prompt("Enter Name _ ");
+                this.age = prompt("Enter Age _ ");
+                this.Contry = prompt("Enter Country _ ");
+                this.mobile = prompt("Enter Mobile Number _ ");
+            }
+        }
+        
+        // let person1 = new Persion("John Doe", 25, "USA", 1234567890);
+        // person1.displayDetails();
+
+        let person2 = new Persion();
+        person2.getData();
+        person2.displayDetails();
+
+    </script>
+</body>
+</html>

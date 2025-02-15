@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class cyclic{
+
+            constructor(cName,wR){
+                this.cName=cName;
+                this.wR=wR;
+            }
+            
+            display(){
+                document.write("the name of the cyclic is " + this.cName);
+                document.write("<br>The wheel radius is " + this.wR);
+                document.write("<br>The circumference of the wheel is " + (2*Math.PI*this.wR));
+                document.write("<br>The area of the wheel is " + (Math.PI*this.wR*this.wR));
+            }
+        }
+
+        let c1 = new cyclic("A1",20);
+        c1.display();
+        let c2 = new cyclic("Phonix",22);
+        c2.display();
+        
+    </script>
+</body>
+</html>
+
+
+<!-- or if wanna make multy argument constructer so ...!
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Cyclic {
+            constructor(cName, wR) {
+                if (arguments.length === 1) { // Check if only one argument is provided
+                    this.cName = "Unknown";
+                    this.wR = cName; // The single argument is the wheel radius
+                } else if (arguments.length === 2) { // Check if two arguments are provided
+                    this.cName = cName;
+                    this.wR = wR;
+                } else {
+                    // Handle cases where no arguments are provided or more than two arguments are provided
+                    this.cName = "Unknown";
+                    this.wR = 0; // Or throw an error: throw new Error("Invalid number of arguments");
+                }
+            }
+
+            display() {
+                document.write("The name of the cyclic is " + this.cName);
+                document.write("<br>The wheel radius is " + this.wR);
+                document.write("<br>The circumference of the wheel is " + (2 * Math.PI * this.wR));
+                document.write("<br>The area of the wheel is " + (Math.PI * this.wR * this.wR));
+                document.write("<br>"); // Added a newline for better formatting
+            }
+        }
+
+        let c3 = new Cyclic(30);
+        c3.display();
+        let c1 = new Cyclic("A1", 20);
+        c1.display();
+        let c2 = new Cyclic("Phonix", 22);
+        c2.display();
+
+    </script>
+</body>
+</html>
+
+-->

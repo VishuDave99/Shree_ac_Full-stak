@@ -9,9 +9,19 @@
     <script>
         document.write("here is prime number cheker ");
         var yolo = parseInt(prompt("enter Num to cheack is Prime or not "));
-        for(i=yolo;){
-            
+        var flag = true;
+        for(i=2; i<=yolo/2; i++){
+            if(yolo % i == 0){
+                flag = false;
+                break;
+            }
         }
+        if(flag){
+            document.write("<br> " + yolo + " is a prime number.");
+        }else{
+            document.write("<br> " + yolo + " is not a prime number.");
+        }
+        
     </script>
 </body>
 </html>

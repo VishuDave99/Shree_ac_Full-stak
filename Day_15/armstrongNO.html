@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //wap to get a number from  user and find that number is armstrong or not , if not then give some examples of armstrong num
+        var number = parseInt(prompt("Enter a number:"));
+        var originalNumber = number;
+        var sum = 0;
+        
+        while (number > 0) {
+            var remainder = number % 10;
+            sum += Math.pow(remainder, 3);
+            number = Math.floor(number / 10);
+        }
+        
+        if (sum === originalNumber) {
+            document.write(originalNumber + " is an Armstrong number.");
+        } else {
+            document.write(originalNumber + " is not an Armstrong number. Here are some examples of Armstrong numbers: 153, 370, 371, 407, 1634, 8208, 9474, 54748.");
+        }
+        
+    </script>
+    
+</body>
+</html>
